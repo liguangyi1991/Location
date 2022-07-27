@@ -7,6 +7,7 @@
 
 #import "AppDelegate.h"
 #import "FMDBManager.h"
+#import "GeofenceMonitor.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [[GeofenceMonitor geofenceMonitor] requestAlwaysAuthorization];
+    [[GeofenceMonitor geofenceMonitor] setAllowsBackgroundLocationUpdates:YES];
+    [[GeofenceMonitor geofenceMonitor] startMonitoringSignificantLocationChanges];
+
     // Override point for customization after application launch.
+    if( [launchOptions objectForKey:UIApplicationLaunchOptionsLocationKey])  {
+      #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
+      [[GeofenceMonitor geofenceMonitor] requestAlwaysAuthorization];
+      #endif
+      #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 90000
+      [[GeofenceMonitor geofenceMonitor] setAllowsBackgroundLocationUpdates:YES];
+      #endif
+      [[GeofenceMonitor geofenceMonitor] startMonitoringSignificantLocationChanges];
+    }
     [FMDBManager shareInstance];
     return YES;
 }

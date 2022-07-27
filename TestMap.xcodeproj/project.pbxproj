@@ -17,6 +17,7 @@
 		84922BB7289137F4009D8F2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84922BB5289137F4009D8F2C /* LaunchScreen.storyboard */; };
 		84922BBA289137F4009D8F2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84922BB9289137F4009D8F2C /* main.m */; };
 		84922BC328913DF0009D8F2C /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84922BC228913DF0009D8F2C /* FMDBManager.m */; };
+		84922BC928914475009D8F2C /* GeofenceMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84922BC828914475009D8F2C /* GeofenceMonitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		84922BC028913AA4009D8F2C /* TestMap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestMap.entitlements; sourceTree = "<group>"; };
 		84922BC128913DF0009D8F2C /* FMDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
 		84922BC228913DF0009D8F2C /* FMDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
+		84922BC728914475009D8F2C /* GeofenceMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeofenceMonitor.h; sourceTree = "<group>"; };
+		84922BC828914475009D8F2C /* GeofenceMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeofenceMonitor.m; sourceTree = "<group>"; };
 		94176837C0B5F7C391CA0E28 /* Pods-TestMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMap.debug.xcconfig"; path = "Target Support Files/Pods-TestMap/Pods-TestMap.debug.xcconfig"; sourceTree = "<group>"; };
 		976288A14BCE0C1A1AA243BE /* Pods_TestMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -100,6 +103,8 @@
 				84922BAB289137DB009D8F2C /* ViewController.m */,
 				84922BC128913DF0009D8F2C /* FMDBManager.h */,
 				84922BC228913DF0009D8F2C /* FMDBManager.m */,
+				84922BC728914475009D8F2C /* GeofenceMonitor.h */,
+				84922BC828914475009D8F2C /* GeofenceMonitor.m */,
 				84922BAD289137DB009D8F2C /* Main.storyboard */,
 				84922BB3289137F4009D8F2C /* Assets.xcassets */,
 				84922BB5289137F4009D8F2C /* LaunchScreen.storyboard */,
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84922BBA289137F4009D8F2C /* main.m in Sources */,
+				84922BC928914475009D8F2C /* GeofenceMonitor.m in Sources */,
 				84922BAC289137DB009D8F2C /* ViewController.m in Sources */,
 				84922BC328913DF0009D8F2C /* FMDBManager.m in Sources */,
 				84922BA6289137DB009D8F2C /* AppDelegate.m in Sources */,
